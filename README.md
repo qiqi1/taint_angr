@@ -4,7 +4,7 @@
 
 # window安装过程
 1、下载文件  
-https://github.com/qiqi1/taint_angr.git
+https://github.com/qiqi1/taint_angr.git  
 2、安装python3版本  
 3、安装python库  
 pip3 install cle  
