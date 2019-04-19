@@ -20,20 +20,13 @@ while len(simgr.active) == 1:
     simgr.step()
     try:
         if simgr.active[0].addr == 0x8048601:
-            #print("0x%x"%simgr.active[0].addr)
-            #ret = simgr.active[0].mem[simgr.active[0].regs.r3].long.concrete
             break
     except:
         break
     
 
 
-##输出所有的ir语句
-# for cfg_ir in simgr.ir_trace:
-    # for addr_ir in cfg_ir:
-        # print(addr_ir)
-
-#设置污点源,下面的对应的是污点寄存器是r0
+#设置污点源,下面是设置内存为污染源
 taint_value = []
 taint_mem = []
 
